@@ -1,2 +1,2 @@
 print("Olá, Mundo!")
-print("Me livrei da maldição")
+print("Me livrei da maldição.")
