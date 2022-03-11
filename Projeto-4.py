@@ -2,6 +2,7 @@ a = 5
 b = 4
 soma = a + b
 quadrado = soma**2
+
 from time import sleep
 
 print ('==' * 15)
