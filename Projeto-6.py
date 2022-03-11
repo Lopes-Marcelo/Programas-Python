@@ -1,22 +1,25 @@
-from random import randint
-from time import sleep
-from operator import itemgetter
-jogo = {'jogador A': randint(1,6),
-        'jogador B': randint(1,6),
-        'jogador C': randint(1,6),
-        'jogador D': randint(1,6),
-        'jogador E': randint(1,6)}
-ranking = list()
-print ('==' * 15)
-print ('   JOGO DE DADOS    ')
-print ('==' * 15)
-print ('Valores sorteados:')
-for k, v in jogo.items ():
-    print (f"{k} tirou {v} no dado.")
-sleep(1)
-ranking = sorted(jogo.items(), key=itemgetter(1), reverse=True)
-print('-=' * 15)
-print(' -== RANKING DOS JOGADORES ==-')
-for i, v in enumerate(ranking):
-    print(f'{i+1}ºlugar: {v[0]} com {v[1]}.')
-    sleep(1)
+#Entrada de valores
+print('='*18)
+print('Exercício 2: idade')
+print('='*18)
+nome = input ("Como se chama? ")
+ano = eval (input ("Nasceu em que ano? "))
+mes = eval (input ("Nasceu em que mês? "))
+dia = eval (input ("Nasceu em que dia? "))
+ano_atual = eval (input ("Ano atual? "))
+mes_atual = eval (input ("Mês atual? "))
+dia_atual = eval (input ("Dia atual? "))
+dataNasc = datetime.date(ano, mes, dia)
+dataAtual = datetime.date(ano_atual, mes_atual, dia_atual)
+
+#diferença retorna em timedelta
+diferenca = (dataAtual - dataNasc)
+#Cálculos e Resultados
+rslt = (diferenca.days / 365.25)
+#ano_atual-ano
+
+if (dia == dia_atual and mes == mes_atual):
+    print ("O %s tem %d anos!" %(nome, rslt))
+else:
+    ((dia > dia_atual and mes == mes_atual) or mes < mes_atual)
+    print ("O %s tem %d anos!" %(nome, rslt))
