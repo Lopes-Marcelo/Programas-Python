@@ -8,7 +8,7 @@ jogo = {'jogador A': randint(1,6),
         'jogador E': randint(1,6)}
 ranking = list()
 print ('==' * 15)
-print ('   JOGO DE DADOS    ')
+print ('    JOGO DE DADOS    ')
 print ('==' * 15)
 print ('Valores sorteados:')
 for k, v in jogo.items ():
