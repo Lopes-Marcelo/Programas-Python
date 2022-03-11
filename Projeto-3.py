@@ -1,3 +1,5 @@
+# n terminado, problemas no final
+
 from time import sleep
 
 print(' = ' * 15)
