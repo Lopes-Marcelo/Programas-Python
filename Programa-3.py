@@ -1,4 +1,4 @@
-# n terminado, problemas no final!
+# nao terminado, problemas no final!
 
 from time import sleep
 
